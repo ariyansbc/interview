@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>createBtn logic</title>
+</head>
+
+<body>
+
+    <script>
+        for (var i = 1; i <= 50; i++) {
+
+            var btn = document.createElement("button");
+            //console.log(btn)
+            btn.appendChild(document.createTextNode("Button" + i));
+            btn.addEventListener('click', function () {
+                { console.log(i); }
+            });
+            document.body.appendChild(btn);
+            btn.style.padding = '10px';
+            btn.style.margin = '10px';
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
